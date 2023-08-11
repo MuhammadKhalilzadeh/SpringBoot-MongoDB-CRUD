@@ -1,0 +1,36 @@
+POST http://localhost:8080/employees
+Content-Type: application/json
+
+{
+    "id": "1",
+    "fname" : "Mehrdad",
+    "lname" : "Kh",
+    "phone" : "09121234567",
+    "email" : "mkh@mail.org",
+    "birthdate" : "1377-10-03"
+}
+
+###
+
+GET http://localhost:8080/employees
+
+###
+
+GET http://localhost:8080/employees/1
+
+###
+DELETE http://localhost:8080
+Content-Type: application/json
+
+{
+    "id": "2",
+    "fname" : "Mehrdad",
+    "lname" : "Kh",
+    "phone" : "09121234567",
+    "email" : "mkh@mail.org",
+    "birthdate" : "1377-10-03"
+}
+
+###
+DELETE http://localhost:8080/employees/1
+Content-Type: application/json
